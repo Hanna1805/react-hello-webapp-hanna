@@ -32,7 +32,6 @@ export const Footer = () => {
     <div className="container mt-5" style={{ maxWidth: '800px' }}>
       
       {view === 'list' ? (
-        /* --- VISTA DE LISTA --- */
         <div className="card">
           <div className="card-header d-flex justify-content-end bg-white border-0">
             <button className="btn btn-success" onClick={() => setView('form')}>
@@ -63,7 +62,6 @@ export const Footer = () => {
           </ul>
         </div>
       ) : (
-        /* --- VISTA DE FORMULARIO (Basada en tu segunda imagen) --- */
         <div className="text-center">
           <h2>Add a new contact</h2>
           <form onSubmit={handleAddContact} className="text-start mt-4">
